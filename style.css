@@ -1,0 +1,180 @@
+
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h3, p, .profile   {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body    {
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-content: center;   
+}
+/* End of General styles */
+
+/* Card*/
+.card   {
+    width: 18.5rem;
+    height: auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: .8rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 18.5rem 1fr auto;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0px 14px 21px 5px rgba(0,0,0,0.13);
+}
+/* End of Card */
+
+/*  Card image */
+.img-card   {
+    width: 16rem;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: center;
+    border-radius: .4rem;
+    position: relative;
+    top: 1.25rem;
+    left: 1.25rem;   
+}
+
+.img-conteiner .img-overlay {
+    width: 16rem;
+    height: 16rem;
+    background-color: hsl(178, 100%, 50%, 60%);
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.img-conteiner .img-overlay:hover   {
+    opacity: 1;
+    transition: ease-in .2s;
+}
+
+.img-conteiner .img-overlay .img-view   {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* End of Card image */
+
+/* Text Content */
+.text-content   {
+    width: 18rem;
+    color: #fff;
+    margin: 0;
+    height: auto;
+}
+
+.card-title {
+    margin: 0 0 1rem 1.25rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.card-title:hover {
+    color: hsl(178, 100%, 50%);
+    transition: ease-in .2s;
+    cursor: pointer;
+    
+}
+.card-text  {
+    margin: 0 0 0 1.25rem;
+    font-weight: 300;
+    font-size: .95rem;
+    color: hsl(215, 51%, 70%);
+}
+/* End of text Content */
+
+/* Card sell */
+.card-sell  {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 1.25rem 0 1.25rem 1.25rem;
+    height: 1rem;
+}
+
+.etherium   {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-self: center;
+    color: hsl(178, 100%, 50%);
+    font-size: .85rem;
+}
+
+.time   {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-self: center;
+    color: hsl(215, 51%, 70%);
+    position: relative;
+    font-size: .85rem;
+    left: 6rem;
+}
+
+.img-eth    {
+    height: 1rem;
+}
+
+.eth, .days {
+    position: relative;
+    left: .5rem;
+}
+
+.img-clock {
+    height: 1rem;
+    align-self: center;
+} 
+/* end of card sell */
+
+/* card author */
+.card-author    {
+    display: flex;
+    align-content: center;
+    border-top: solid .1px hsla(215, 52%, 60%, 0.5);
+    margin: 0 1.25rem 1.5rem 1.25rem;
+    padding-top: .8rem;
+    color: hsl(215, 51%, 70%);
+    font-size: .9rem;  
+}
+
+.img-author {
+    width: 1.75rem;
+    border: solid 1px #fff;
+    border-radius: 50%;
+}
+
+.profile    {
+    position: relative;
+    align-self: center;
+    padding-left: 1rem;
+    text-decoration: none;
+    font-size: .85rem;
+}
+.card-author .profile span  {
+    color: #fff;
+}
+
+.card-author .profile span:hover   {
+    color: hsl(178, 100%, 50%);
+    transition: ease-in .2s;
+    cursor: pointer;
+}
+
+/* end of card author */
